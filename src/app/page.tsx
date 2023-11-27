@@ -1,95 +1,24 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client';
+
+import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <Flex direction="column" alignItems="center" justifyContent="center" margin="auto" maxW="80%">
+      <Flex marginBottom="2rem" gap={4} direction="column">
+        <Heading>Welcome to DAP - De Beleyr!</Heading>
+        <Text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id urna vitae sapien venenatis cursus. Nullam
+          lacinia, sapien euismod condimentum commodo, eros nisl ullamcorper magna, et ultrices quam tortor sit amet
+          arcu. Sed euismod, augue vel sollicitudin ultricies, nisl sem lacinia quam, sed ultricies eros nisl vitae
+          justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi.
+          Donec auctor, nisl ac ultricies facilisis, ligula sem lacinia magna, ac vehicula lacus felis sit amet nunc.
+          Sed euismod, augue vel sollicitudin ultricies, nisl sem lacinia quam, sed ultricies eros nisl vitae justo.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Donec
+          auctor, nisl ac ultricies facilisis, ligula sem lacinia magna, ac vehicula lacus felis sit amet nunc.
+        </Text>
+      </Flex>
+      <Image alt="Team" src="https://placehold.co/800x400" />
+    </Flex>
+  );
 }
