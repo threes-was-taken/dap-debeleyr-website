@@ -4,7 +4,7 @@ import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <Flex direction="column" alignItems="center" justifyContent="center" margin="auto" maxW="80%">
+    <>
       <Flex marginBottom="2rem" gap={4} direction="column">
         <Heading>Welcome to DAP - De Beleyr!</Heading>
         <Text>
@@ -19,6 +19,6 @@ export default function Home() {
         </Text>
       </Flex>
       <Image alt="Team" src="https://placehold.co/800x400" />
-    </Flex>
+    </>
   );
 }
