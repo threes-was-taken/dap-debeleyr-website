@@ -6,7 +6,13 @@ import Link from 'next/link';
 export function Header() {
   return (
     <header>
-      <Flex alignItems="center" direction="row" justify="space-between" margin="1rem">
+      <Flex
+        alignItems="center"
+        direction={{ base: 'column', md: 'row' }}
+        justify="space-between"
+        margin="1rem"
+        gap={{ base: 4, md: 0 }}
+      >
         <Link href="/">
           <Heading size="lg">DAP De Beleyr</Heading>
         </Link>
