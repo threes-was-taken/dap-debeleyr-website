@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Flex marginBottom="2rem" gap={4} direction="column">
-        <Heading>Welcome to DAP - De Beleyr!</Heading>
+        <Heading>Welkom bij DAP - De Beleyr!</Heading>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id urna vitae sapien venenatis cursus. Nullam
           lacinia, sapien euismod condimentum commodo, eros nisl ullamcorper magna, et ultrices quam tortor sit amet

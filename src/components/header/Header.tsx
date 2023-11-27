@@ -16,7 +16,7 @@ export function Header() {
               <Heading size="md">Home</Heading>
             </Link>
             <Link href="/about">
-              <Heading size="md">About</Heading>
+              <Heading size="md">Over ons</Heading>
             </Link>
             <Link href="/contact">
               <Heading size="md">Contact</Heading>
