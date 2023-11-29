@@ -36,7 +36,7 @@ export default function About() {
         <Heading as="h1" size="lg">
           Ons team
         </Heading>
-        <Flex direction={{ base: 'column', md: 'row' }} gap={{ base: 8, md: 4 }}>
+        <Flex direction={{ sm: 'column', md: 'row' }} gap={{ sm: 8, md: 4 }}>
           {team.map((member) => (
             <Flex direction="column" key={member.name} gap={2}>
               <Image src={member.image} alt={member.name} />

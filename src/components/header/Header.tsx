@@ -8,10 +8,13 @@ export function Header() {
     <header>
       <Flex
         alignItems="center"
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ sm: 'column', md: 'row' }}
         justify="space-between"
-        margin="1rem"
-        gap={{ base: 4, md: 0 }}
+        padding="1rem"
+        marginBottom="2rem"
+        gap={{ sm: 4, md: 0 }}
+        backgroundColor="primary"
+        color="white"
       >
         <Link href="/">
           <Heading size="lg">DAP De Beleyr</Heading>

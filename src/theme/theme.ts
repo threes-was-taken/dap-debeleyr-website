@@ -16,6 +16,23 @@ export const fonts = {
   mono: defaultFonts,
 };
 
+const colors = {
+  primary: '#192a56',
+  secondary: '#273c75',
+  tertiary: '#2f3640',
+  gray: '#7f8fa6',
+  lightGray: '#dcdde1',
+  white: '#fff',
+  black: '#000',
+  success: '#2ecc71',
+  danger: '#c0392b',
+  warning: '#f39c12',
+  info: '#3498db',
+  light: '#f5f6fa',
+  dark: '#353b48',
+  transparent: 'transparent',
+};
+
 export const spacing = {
   space: {
     x1: '8px',
@@ -40,4 +57,5 @@ export const theme = extendTheme({
   fonts,
   spacing,
   borderRadius,
+  colors,
 });
