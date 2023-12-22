@@ -11,7 +11,15 @@ export function Providers({ children }: Readonly<{ children: React.ReactNode }>)
     <CacheProvider>
       <ChakraProvider theme={theme}>
         <Header />
-        <Flex direction="column" alignItems="center" justifyContent="center" margin="auto" maxW="80%">
+        <Flex
+          direction="column"
+          alignItems="center"
+          justifyContent="flex-start"
+          mx="auto"
+          maxW="80%"
+          color="primary"
+          flex={'1 0 auto'}
+        >
           {children}
         </Flex>
         <Footer />

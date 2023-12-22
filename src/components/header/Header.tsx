@@ -9,18 +9,15 @@ export function Header() {
       <Flex
         alignItems="center"
         direction={{ sm: 'column', md: 'row' }}
-        justify="space-between"
+        justify="center"
         padding="1rem"
         marginBottom="2rem"
         gap={{ sm: 4, md: 0 }}
         backgroundColor="primary"
         color="white"
       >
-        <Link href="/">
-          <Heading size="lg">DAP De Beleyr</Heading>
-        </Link>
         <Flex direction="row" alignItems="center">
-          <Flex justifyContent="center" gap={4}>
+          <Flex justifyContent="center" gap={16}>
             <Link href="/">
               <Heading size="md">Home</Heading>
             </Link>
