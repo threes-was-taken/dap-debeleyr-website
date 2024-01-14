@@ -2,24 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 0.5rem 10%;
   margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .header {
-    padding: 0.5rem 10%;
+    flex-direction: column;
+    padding: 2rem 1rem;
   }
-}
-
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1.5rem;
-  /* font-family: 'Montserrat', sans-serif; */
-  font-size: 1.25rem;
 }
 
 .logo {
@@ -28,12 +19,16 @@
   justify-content: center;
   gap: 2rem;
   text-decoration: none;
-  color: #ddd6cb;
+  color: #7f8fa6;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
 }
 
 .logo img {

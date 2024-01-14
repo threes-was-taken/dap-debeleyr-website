@@ -1,14 +1,8 @@
 .link {
   text-decoration: none;
-  color: #fff;
+  color: #7f8fa6;
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-}
-
-.active {
-  color: linear-gradient(90deg, #535c68, #95afc0);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.25rem;
 }

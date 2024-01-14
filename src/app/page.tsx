@@ -39,9 +39,11 @@ export default function Home() {
               GSM: <a href="tel:0475658433">+32(0) 475 65 84 33</a>
             </p>
             <p>Grote baan 304a, 9120 Melsele</p>
-            <a href="https://maps.app.goo.gl/daoTffm2crX66ML77" target="_blank">
-              navigatie
-            </a>
+            <p>
+              <a href="https://maps.app.goo.gl/daoTffm2crX66ML77" target="_blank">
+                navigatie
+              </a>
+            </p>
           </section>
         </article>
       </main>

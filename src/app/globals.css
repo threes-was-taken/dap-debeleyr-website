@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   background: radial-gradient(#dcdde1, #f5f6fa);
-  color: #130f40;
+  color: #192a56;
 }
 
 .not-found {
@@ -25,7 +25,7 @@ body {
   font-weight: 900;
   color: #130f40;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #535c68, #95afc0);
+  background: linear-gradient(90deg, #718093, #7f8fa6);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
