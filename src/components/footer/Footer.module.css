@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: gray;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+
+.section div {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-grow: 2;
+}

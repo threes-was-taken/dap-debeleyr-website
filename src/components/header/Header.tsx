@@ -1,35 +1,36 @@
-'use client';
-
-import { Flex, Heading } from '@chakra-ui/react';
 import Link from 'next/link';
+import Image from 'next/image';
+import styles from './Header.module.css';
+import HeaderBackground from './HeaderBackground';
+import NavLink from './NavLink';
+
+import logo from '@/assets/logo.jpeg';
 
 export function Header() {
   return (
-    <header>
-      <Flex
-        alignItems="center"
-        direction={{ sm: 'column', md: 'row' }}
-        justify="center"
-        padding="1rem"
-        marginBottom="2rem"
-        gap={{ sm: 4, md: 0 }}
-        backgroundColor="primary"
-        color="white"
-      >
-        <Flex direction="row" alignItems="center">
-          <Flex justifyContent="center" gap={16}>
-            <Link href="/">
-              <Heading size="md">Home</Heading>
-            </Link>
-            <Link href="/about">
-              <Heading size="md">Over ons</Heading>
-            </Link>
-            <Link href="/contact">
-              <Heading size="md">Contact</Heading>
-            </Link>
-          </Flex>
-        </Flex>
-      </Flex>
-    </header>
+    <>
+      <HeaderBackground />
+      <header className={styles.header}>
+        <Link className={styles.logo} href="/">
+          <Image src={logo.src} width={200} height={200} alt={'DAP De Beleyr'} priority />
+          DAP De Beleyr
+        </Link>
+
+        <nav className={styles.nav}>
+          <ul>
+            <li>
+              <NavLink href="/">
+                <h3>Home</h3>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink href="/about">
+                <h3>Over ons</h3>
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
   );
 }

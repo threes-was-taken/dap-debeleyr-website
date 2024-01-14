@@ -1,14 +1,15 @@
-'use client';
-import { Flex, Text } from '@chakra-ui/react';
+import Cat from '../svg/Cat';
+import Dog from '../svg/Dog';
+import styles from './Footer.module.css';
 
 export function Footer(): JSX.Element {
   return (
     <footer>
-      <Flex direction="row" alignItems="center" padding="1rem" color="gray" shrink={0}>
-        <Flex grow={2} justifyContent="center" gap={4}>
-          <Text size="2xl">Made with love by her son. ❤️ &copy;</Text>
-        </Flex>
-      </Flex>
+      <section className={styles.section}>
+        <div>
+          <p>Made with love by her son. ❤️ &copy;</p>
+        </div>
+      </section>
     </footer>
   );
 }
