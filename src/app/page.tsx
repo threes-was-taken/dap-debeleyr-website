@@ -1,95 +1,50 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import ImageSlideShow from '@/components/home/slide-show/ImageSlideShow';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <header className={styles.header}>
+        <div className={styles.slideshow}>
+          <ImageSlideShow />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+        <div>
+          <div className={styles.hero}>
+            <h1>DAP De Beleyr</h1>
+            <p>Welkom bij dierenartsenpraktijk De Beleyr. </p>
+            <p>Gespecialiseerd in kleine huisdieren.</p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <article className={styles.article}>
+          <section>
+            <h2>Openingsuren</h2>
+            <p>Enkel op afspraak</p>
+            <p>
+              Telefonisch bereikbaar: <br /> maandag, donderdag en vrijdag van 9.30 tot 12.15 en van 13.15 tot 18.00{' '}
+              <br /> dinsdag en woensdag: van 8.30 tot 12.15 en van 13.15 tot 17.30
+            </p>
+            <p>
+              Ophalen van voeding en/of medicatie: <br />
+              elke werkdag van 10.45 tot 12.15 en van 13.30 tot 18.30 (op woe tot 17.30)
+            </p>
+          </section>
+          <section>
+            <h2>Contact</h2>
+            <p>
+              Tel.: <a href="tel:037752026">+32(0) 03 775 20 26</a>
+            </p>
+            <p>
+              GSM: <a href="tel:0475658433">+32(0) 475 65 84 33</a>
+            </p>
+            <p>Grote baan 304a, 9120 Melsele</p>
+            <a href="https://maps.app.goo.gl/daoTffm2crX66ML77" target="_blank">
+              navigatie
+            </a>
+          </section>
+        </article>
+      </main>
+    </>
+  );
 }
