@@ -1,24 +1,50 @@
-'use client';
-
-import { Flex, Heading, Image, Text } from '@chakra-ui/react';
+import ImageSlideShow from '@/components/home/slide-show/ImageSlideShow';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <Flex direction="column" alignItems="center" justifyContent="center" margin="auto" maxW="80%">
-      <Flex marginBottom="2rem" gap={4} direction="column">
-        <Heading>Welcome to DAP - De Beleyr!</Heading>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id urna vitae sapien venenatis cursus. Nullam
-          lacinia, sapien euismod condimentum commodo, eros nisl ullamcorper magna, et ultrices quam tortor sit amet
-          arcu. Sed euismod, augue vel sollicitudin ultricies, nisl sem lacinia quam, sed ultricies eros nisl vitae
-          justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi.
-          Donec auctor, nisl ac ultricies facilisis, ligula sem lacinia magna, ac vehicula lacus felis sit amet nunc.
-          Sed euismod, augue vel sollicitudin ultricies, nisl sem lacinia quam, sed ultricies eros nisl vitae justo.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Donec
-          auctor, nisl ac ultricies facilisis, ligula sem lacinia magna, ac vehicula lacus felis sit amet nunc.
-        </Text>
-      </Flex>
-      <Image alt="Team" src="https://placehold.co/800x400" />
-    </Flex>
+    <>
+      <header className={styles.header}>
+        <div className={styles.slideshow}>
+          <ImageSlideShow />
+        </div>
+        <div>
+          <div className={styles.hero}>
+            <h1>DAP De Beleyr</h1>
+            <p>Welkom bij dierenartsenpraktijk De Beleyr. </p>
+            <p>Gespecialiseerd in kleine huisdieren.</p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <article className={styles.article}>
+          <section>
+            <h2>Openingsuren</h2>
+            <p>Enkel op afspraak</p>
+            <p>
+              Telefonisch bereikbaar: <br /> maandag, donderdag en vrijdag van 9.30 tot 12.15 en van 13.15 tot 18.00{' '}
+              <br /> dinsdag en woensdag: van 8.30 tot 12.15 en van 13.15 tot 17.30
+            </p>
+            <p>
+              Ophalen van voeding en/of medicatie: <br />
+              elke werkdag van 10.45 tot 12.15 en van 13.30 tot 18.30 (op woe tot 17.30)
+            </p>
+          </section>
+          <section>
+            <h2>Contact</h2>
+            <p>
+              Tel.: <a href="tel:037752026">+32(0) 03 775 20 26</a>
+            </p>
+            <p>
+              GSM: <a href="tel:0475658433">+32(0) 475 65 84 33</a>
+            </p>
+            <p>Grote baan 304a, 9120 Melsele</p>
+            <a href="https://maps.app.goo.gl/daoTffm2crX66ML77" target="_blank">
+              navigatie
+            </a>
+          </section>
+        </article>
+      </main>
+    </>
   );
 }

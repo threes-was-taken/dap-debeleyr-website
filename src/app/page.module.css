@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 75rem;
+}
+
+.slideshow {
+  width: 40rem;
+  height: 25rem;
+}
+
+.hero {
+  font-size: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #535c68, #95afc0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 3rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.article section {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  max-width: 50rem;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.article a {
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #535c68, #95afc0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
