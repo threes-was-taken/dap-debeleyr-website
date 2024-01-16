@@ -6,4 +6,9 @@
   margin: auto 3rem;
   align-items: center;
   justify-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin: auto 1rem;
+  }
 }

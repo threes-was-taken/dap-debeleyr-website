@@ -38,6 +38,9 @@ export default function Home() {
             <p>
               GSM: <a href="tel:0475658433">+32(0) 475 65 84 33</a>
             </p>
+            <p>
+              Email: <a href="mailto:dr.idb@skynet.be">dr.idb@skynet.be</a>
+            </p>
             <p>Grote baan 304a, 9120 Melsele</p>
             <p>
               <a href="https://maps.app.goo.gl/daoTffm2crX66ML77" target="_blank">
