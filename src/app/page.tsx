@@ -1,4 +1,4 @@
-import ImageSlideShow from '@/components/home/slide-show/ImageSlideShow';
+import ImageSlideShow from '@/components/slide-show/ImageSlideShow';
 import styles from './page.module.css';
 
 export default function Home() {

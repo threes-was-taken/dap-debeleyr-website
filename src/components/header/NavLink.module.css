@@ -1,8 +1,22 @@
 .link {
   text-decoration: none;
-  color: #7f8fa6;
+  color: var(--broken-white);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-size: 1.25rem;
+}
+
+.link:hover,
+.link:active {
+  background: linear-gradient(90deg, var(--dark-grey), var(--broken-white));
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 0 0 18px rgba(245, 246, 250, 0.8);
+}
+
+.active {
+  background-clip: text;
+  background: linear-gradient(90deg, var(--dark-grey), var(--broken-white));
+  -webkit-background-clip: text;
 }

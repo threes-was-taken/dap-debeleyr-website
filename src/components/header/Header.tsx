@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 import HeaderBackground from './HeaderBackground';
 import NavLink from './NavLink';
 
-import logo from '@/assets/logo.jpeg';
+import logo from '/public/assets/logo.jpeg';
 
 export default function Header() {
   return (

@@ -31,7 +31,7 @@
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #718093, #7f8fa6);
+  background: linear-gradient(90deg, var(--dark-grey), var(--broken-white));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +63,7 @@
   font-size: 1.25rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #718093, #7f8fa6);
+  background: linear-gradient(90deg, var(--darker-grey), var(--dark-grey));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
