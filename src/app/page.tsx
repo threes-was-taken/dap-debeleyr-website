@@ -5,16 +5,16 @@ export default function Home() {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.slideshow}>
+        <section className={styles.slideshow}>
           <ImageSlideShow />
-        </div>
-        <div>
+        </section>
+        <section>
           <div className={styles.hero}>
             <h1>DAP De Beleyr</h1>
             <p>Welkom bij dierenartsenpraktijk De Beleyr. </p>
             <p>Gespecialiseerd in kleine huisdieren.</p>
           </div>
-        </div>
+        </section>
       </header>
       <main>
         <article className={styles.article}>
