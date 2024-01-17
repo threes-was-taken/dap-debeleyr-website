@@ -4,9 +4,9 @@ import styles from './Header.module.css';
 import HeaderBackground from './HeaderBackground';
 import NavLink from './NavLink';
 
-import logo from '@/assets/logo.jpeg';
+import logo from '/public/assets/logo.jpeg';
 
-export function Header() {
+export default function Header() {
   return (
     <>
       <HeaderBackground />
@@ -17,18 +17,9 @@ export function Header() {
         </Link>
 
         <nav className={styles.nav}>
-          <ul>
-            <li>
-              <NavLink href="/">
-                <h3>Home</h3>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href="/about">
-                <h3>Over ons</h3>
-              </NavLink>
-            </li>
-          </ul>
+          <NavLink href="/about">
+            <h3>Over ons</h3>
+          </NavLink>
         </nav>
       </header>
     </>

@@ -6,14 +6,14 @@ export default function HeaderBackground(): JSX.Element {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: '#130f40', stopOpacity: '1' }} />
-            <stop offset="100%" style={{ stopColor: '#30336b', stopOpacity: '1' }} />
+            <stop offset="0%" style={{ stopColor: '#192a56', stopOpacity: '1' }} />
+            <stop offset="100%" style={{ stopColor: '#273c75', stopOpacity: '1' }} />
           </linearGradient>
         </defs>
         <path
           fill="url(#gradient)"
-          d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,186.7C672,192,768,192,864,181.3C960,171,1056,149,1152,133.3C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
+          d="m0 256 48-16c48-16 144-48 240-58.7 96-10.3 192-.3 288 5.4 96 5.3 192 5.3 288-5.4 96-10.3 192-32.3 288-48 96-16.3 192-26.3 240-32l48-5.3V0H0Z"
+        />
       </svg>
     </div>
   );

@@ -1,8 +1,6 @@
-import Cat from '../svg/Cat';
-import Dog from '../svg/Dog';
 import styles from './Footer.module.css';
 
-export function Footer(): JSX.Element {
+export default function Footer(): JSX.Element {
   return (
     <footer>
       <section className={styles.section}>
