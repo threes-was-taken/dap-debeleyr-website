@@ -1,35 +1,16 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
-import HeaderBackground from './HeaderBackground';
-import NavLink from './NavLink';
 
-import logo from '@/assets/logo.jpeg';
+import logo from '/public/assets/logo.jpeg';
 
-export function Header() {
+export default function Header() {
   return (
     <>
-      <HeaderBackground />
       <header className={styles.header}>
-        <Link className={styles.logo} href="/">
+        <div className={styles.logo}>
           <Image src={logo.src} width={200} height={200} alt={'DAP De Beleyr'} priority />
           DAP De Beleyr
-        </Link>
-
-        <nav className={styles.nav}>
-          <ul>
-            <li>
-              <NavLink href="/">
-                <h3>Home</h3>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href="/about">
-                <h3>Over ons</h3>
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </header>
     </>
   );

@@ -1,13 +1,12 @@
-import Cat from '../svg/Cat';
-import Dog from '../svg/Dog';
 import styles from './Footer.module.css';
 
-export function Footer(): JSX.Element {
+export default function Footer(): JSX.Element {
   return (
     <footer>
       <section className={styles.section}>
         <div>
-          <p>Made with love by her son. ❤️ &copy;</p>
+          <p>&copy; 2024</p>
+          <p>BTW: BE 0471 521 156</p>
         </div>
       </section>
     </footer>
