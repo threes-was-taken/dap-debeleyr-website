@@ -2,6 +2,9 @@ import { Card } from '@/components/card/Card';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 import styles from './page.module.css';
+import Image from 'next/image';
+
+import vetOffice from '/public/assets/vet-office.jpeg';
 
 export default function Home() {
   return (
@@ -14,10 +17,17 @@ export default function Home() {
             <p className={styles['scroll-down']}>Scroll down</p>
           </div>
           <div className={styles['landing-zone__content']}>
-            <h1 className={styles['landing-zone__title']}>DAP De Beleyr</h1>
-            <p className={styles['landing-zone__subtitle']}>
-              Uw dierenartsenpraktijk gespecialiseerd in kleine huisdieren.
-            </p>
+            <div className={'landing-zone__content-title'}>
+              <h1 className={styles['landing-zone__title']}>DAP De Beleyr</h1>
+              <p className={styles['landing-zone__subtitle']}>
+                Uw dierenartsenpraktijk gespecialiseerd in kleine huisdieren.
+              </p>
+            </div>
+          </div>
+          <div className={styles['image-wrapper']}>
+            <div className={styles['office-image']}>
+              <Image alt="DAP De Beleyr office" src={vetOffice.src} quality={100} fill objectFit="cover" />
+            </div>
           </div>
         </section>
         <section id="information" className={styles.information}>
