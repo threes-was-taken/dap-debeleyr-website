@@ -1,8 +1,8 @@
 .card {
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(25, 42, 86, 0.3);
   padding: 1rem;
+  border: 2px solid #f0f0f0;
 }
 
 .card-title {
