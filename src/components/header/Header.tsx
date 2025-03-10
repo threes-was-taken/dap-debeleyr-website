@@ -1,13 +1,12 @@
 import Image from 'next/image';
-import styles from './Header.module.css';
-
 import logo from '/public/assets/logo.jpeg';
+import { JSX } from 'react';
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.logo}>
+      <header>
+        <div>
           <Image src={logo.src} width={200} height={200} alt={'DAP De Beleyr'} priority />
           DAP De Beleyr
         </div>

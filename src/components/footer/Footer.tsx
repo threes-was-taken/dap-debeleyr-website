@@ -1,9 +1,9 @@
-import styles from './Footer.module.css';
+import { JSX } from 'react';
 
 export default function Footer(): JSX.Element {
   return (
     <footer>
-      <section className={styles.section}>
+      <section>
         <div>
           <p>&copy; 2024</p>
           <p>BTW: BE 0471 521 156</p>

@@ -1,4 +1,4 @@
-import styles from './Card.module.css';
+import { JSX } from 'react';
 
 export function Card({
   title,
@@ -8,9 +8,9 @@ export function Card({
   children?: React.ReactNode;
 }>): JSX.Element {
   return (
-    <div className={styles.card}>
-      <h2 className={styles['card-title']}>{title}</h2>
-      <div className={styles['card-content']}>{children}</div>
+    <div>
+      <h2>{title}</h2>
+      <div>{children}</div>
     </div>
   );
 }

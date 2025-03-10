@@ -1,3 +1,5 @@
+import '@radix-ui/themes/styles.css';
+import { Theme } from '@radix-ui/themes';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 
@@ -21,8 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
-      <body className={inter.className}>
-        <main>{children}</main>
+      <body>
+        <Theme accentColor="indigo" grayColor="slate" radius="large" scaling="95%">
+          <main>{children}</main>
+        </Theme>
       </body>
     </html>
   );

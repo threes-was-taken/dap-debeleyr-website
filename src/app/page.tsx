@@ -1,37 +1,34 @@
 import { Card } from '@/components/card/Card';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
-import styles from './page.module.css';
 import Image from 'next/image';
 
 import vetOffice from '/public/assets/vet-office.jpeg';
 
 export default function Home() {
   return (
-    <div className={styles['page-container']}>
+    <div>
       <Header />
-      <div className={styles['page-content']}>
-        <section className={styles['landing-zone']}>
-          <div className={styles['landing-zone__background']}></div>
-          <div className={styles['landing-zone__scroll-down']}>
-            <p className={styles['scroll-down']}>Scroll down</p>
+      <div>
+        <section>
+          <div></div>
+          <div>
+            <p>Scroll down</p>
           </div>
-          <div className={styles['landing-zone__content']}>
-            <div className={'landing-zone__content-title'}>
-              <h1 className={styles['landing-zone__title']}>DAP De Beleyr</h1>
-              <p className={styles['landing-zone__subtitle']}>
-                Uw dierenartsenpraktijk gespecialiseerd in kleine huisdieren.
-              </p>
+          <div>
+            <div>
+              <h1>DAP De Beleyr</h1>
+              <p>Uw dierenartsenpraktijk gespecialiseerd in kleine huisdieren.</p>
             </div>
           </div>
-          <div className={styles['image-wrapper']}>
-            <div className={styles['office-image']}>
+          <div>
+            <div>
               <Image alt="DAP De Beleyr office" src={vetOffice.src} quality={100} fill objectFit="cover" />
             </div>
           </div>
         </section>
-        <section id="information" className={styles.information}>
-          <div className={styles['information-block']}>
+        <section id="information">
+          <div>
             <Card title="Bericht van de praktijk">
               <p>Beste klanten</p>
               <p>
@@ -50,7 +47,7 @@ export default function Home() {
               </p>
             </Card>
           </div>
-          <div className={styles['contact-block']}>
+          <div>
             <Card title="Contact">
               <p>
                 <strong>Adres:</strong> <br />
@@ -72,18 +69,18 @@ export default function Home() {
               </p>
             </Card>
           </div>
-          <div className={styles['opening-hours-block']}>
+          <div>
             <Card title="Openingstijden">
               <p>
                 van 08u00 - 12u00 <br />
                 van 13u15 - 19u30 <br />
                 <strong>ENKEL</strong> op afspraak
               </p>
-              <div className={styles['opening-hours-block__availability']}>
+              <div>
                 <strong>Telefonisch bereikbaar:</strong>
                 <p>Maandag - vrijdag: 09u30 - 12u15 & 13u30 - 17u30</p>
               </div>
-              <div className={styles['opening-hours-block__medication']}>
+              <div>
                 <strong>Ophalen van voeding en/of medicatie:</strong>
                 <p>Maandag - vrijdag: 11u00 - 12u15 & 13u30 - 18u00</p>
               </div>
