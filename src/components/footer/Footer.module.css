@@ -1,0 +1,26 @@
+.footer {
+  background-color: rgb(var(--gray-1));
+  padding: 2rem;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer p {
+  color: rgb(var(--gray-12));
+  margin: 0;
+}
