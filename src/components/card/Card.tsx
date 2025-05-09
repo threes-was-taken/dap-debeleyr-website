@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import styles from './Card.module.css';
 
 export function Card({
@@ -9,8 +10,8 @@ export function Card({
 }>): JSX.Element {
   return (
     <div className={styles.card}>
-      <h2 className={styles['card-title']}>{title}</h2>
-      <div className={styles['card-content']}>{children}</div>
+      <h2>{title}</h2>
+      <div className={styles.cardContent}>{children}</div>
     </div>
   );
 }

@@ -1,12 +1,14 @@
+import { Theme } from '@radix-ui/themes';
+import '@radix-ui/themes/styles.css';
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-import './globals.css';
+import './page.module.css';
 
-const inter = Roboto({
-  weight: ['400', '700', '900'],
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -20,9 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl">
-      <body className={inter.className}>
-        <main>{children}</main>
+    <html lang="nl" className={inter.className}>
+      <body>
+        <Theme accentColor="indigo" grayColor="slate" radius="large" scaling="95%">
+          <main>{children}</main>
+        </Theme>
       </body>
     </html>
   );
