@@ -1,160 +1,154 @@
-.page-container {
+.container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-.page-content {
-  flex: 1;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.landing-zone {
-  position: relative; /* Establish relative positioning context */
-  display: flex;
-  align-items: center;
-  height: 100vh; /* Corrected from 100dvh */
-  padding: 0 5rem;
-  overflow: hidden; /* Prevent any overflow from the blurred background */
-
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Blurred background */
-.landing-zone__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('');
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px); /* Apply blur effect */
-  z-index: -1; /* Ensure it stays behind the content */
-}
-
-.landing-zone__scroll-down {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Ensure it stays behind the content */
-}
-
-.landing-zone__content {
-  position: relative; /* Ensure content is positioned correctly over the background */
-  display: flex;
-  justify-content: space-between;
-  z-index: 2; /* Higher z-index to ensure content is on top */
-  width: 100%;
-  height: 70%;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.landing-zone__content-title {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex-grow: 2;
-  width: 100%;
-}
-
-.image-wrapper {
-  position: absolute;
-  top: 50;
-  right: 0;
-  width: 45%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-.office-image  {
+.hero {
+  min-height: 80vh;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center; /* Center items vertically in the grid */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .image-wrapper {
-    display: none;
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.landing-zone__title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--dark-blue);
-  text-align: left;
-}
-
-.landing-zone__subtitle {
-  font-size: 1.25rem;
-  color: var(--dark-blue);
-}
-
-.scroll-down {
+.heroGradient {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+.heroScroll {
+  position: absolute;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2rem;
-  gap: 1rem;
-  text-decoration: none;
-  z-index: 2;
+  text-align: center;
+}
+
+.heroScroll svg {
+  font-size: 1rem;
+  color: var(--slate-12);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #242b7b;
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  color: var(--slate-12);
+  line-height: 1.6;
+}
+
+.heroImage {
+  position: relative;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px var(--shadow-5);
+  align-self: center;
 }
 
 .information {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    'info info'
-    'contact opening-hours';
+  grid-template-columns: 1fr;
   gap: 2rem;
-  padding: 15rem 5rem 1.75rem 5rem;
+  margin-top: 2rem;
+  grid-template-areas:
+    'message'
+    'contact'
+    'hours';
+  scroll-margin-top: 2rem;
 }
 
-.information-block {
-  grid-area: info;
+@media (min-width: 768px) {
+  .information {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'message message'
+      'contact hours';
+  }
 }
 
-.contact-block {
+@media (min-width: 1024px) {
+  .information {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'message contact hours';
+  }
+}
+
+.information > div {
+  box-shadow: 0 4px 12px var(--shadow-2);
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.information > div:first-child {
+  grid-area: message;
+}
+
+.information > div:nth-child(2) {
   grid-area: contact;
 }
 
-.opening-hours-block {
-  grid-area: opening-hours;
+.information > div:nth-child(3) {
+  grid-area: hours;
 }
 
-.opening-hours-block__availability,
-.opening-hours-block__medication {
-  align-self: start;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.link {
+  color: var(--accent-9);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .information {
-    display: flex;
-    flex-direction: column;
-  }
+.link:hover {
+  color: var(--accent-10);
+  text-decoration: underline;
+}
 
-  .landing-zone__scroll-down {
-    display: none;
-  }
+.strong {
+  font-weight: 600;
 }
