@@ -71,7 +71,7 @@ export default function Home() {
             <p>
               <strong className={styles.strong}>Adres:</strong> <br />
               DAP De Beleyr <br />
-              Grote Baan 304A <br />
+              Grote Baan 304A & 308 <br />
               9120 Beveren
             </p>
             <p>
@@ -94,18 +94,18 @@ export default function Home() {
             </p>
           </Card>
           <Card title="Openingstijden">
-            <p>
-              van 08u00 - 12u00 <br />
-              van 13u15 - 19u30 <br />
-              <strong className={styles.strong}>ENKEL</strong> op afspraak
-            </p>
+            <h3>Bij DAP De Beleyr werken we enkel op afspraak.</h3>
             <div>
               <strong className={styles.strong}>Telefonisch bereikbaar:</strong>
-              <p>Maandag - vrijdag: 09u30 - 12u15 & 13u30 - 17u30</p>
+              <h3>Maken van een afspraak</h3>
+              <p>Maandag - Dinsdag - Donderdag: 09u30 - 12u15 & 13u30 - 17u30</p>
+              <p>Woensdag - Vrijdag: 09u00 - 12u15 & 13u30 - 17u30 (Vrijdag tot 17u)</p>
+              <h3>Dierenartsen</h3>
+              <p>Maandag - Vrijdag: 11u00 - 12u15 & 16u00 - 17u00</p>
             </div>
             <div>
               <strong className={styles.strong}>Ophalen van voeding en/of medicatie:</strong>
-              <p>Maandag - vrijdag: 11u00 - 12u15 & 13u30 - 18u00</p>
+              <p>Maandag - vrijdag: 10u45 - 12u15 & 13u30 - 18u30 (Vrijdag tot 17u30)</p>
             </div>
           </Card>
         </section>
