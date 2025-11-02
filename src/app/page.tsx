@@ -46,27 +46,6 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.information}>
-          <Card title="Bericht van de praktijk">
-            <p>Beste klanten</p>
-            <p>
-              Gedurende de zomermaanden, juli en augustus, zal de praktijk{' '}
-              <strong className={styles.strong}>NIET</strong> gesloten zijn. (Geen verlofperiode) <br />
-              Wel zullen we deze maanden op <strong className={styles.strong}>dinsdagnamiddag</strong> telefonisch niet
-              bereikbaar zijn! <br />
-              Voor <strong className={styles.strong}>ZEER DRINGENDE GEVALLEN</strong> kan u ons wel nog steeds
-              contacteren op het GSM-nummer{' '}
-              <a href="tel:+32475658433" className={styles.link}>
-                +32(0)475 65 84 33
-              </a>
-            </p>
-            <p>Alvast bedankt voor uw begrip en ook voor u een fijne vakantie gewenst.</p>
-            <p>
-              Uw dierenartsen, <br />
-              Ingrid De Beleyr, Katrijn Rosiers & Kimberly Coolen <br />
-              en de assistentes, <br />
-              Jutta, Katharina en Mara
-            </p>
-          </Card>
           <Card title="Contact">
             <p>
               <strong className={styles.strong}>Adres:</strong> <br />
