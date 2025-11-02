@@ -67,8 +67,8 @@ export default function Home() {
             </p>
             <p>
               <strong className={styles.strong}>E-mail:</strong> <br />
-              <a href="mailto:dr.idb@skynet.be" className={styles.link}>
-                dr.idb@skynet.be
+              <a href="mailto:info@dapdebeleyr.be" className={styles.link}>
+                info@dapdebeleyr.be
               </a>
             </p>
           </Card>
