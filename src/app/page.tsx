@@ -4,8 +4,6 @@ import Header from '@/components/header/Header';
 import Image from 'next/image';
 import styles from './page.module.css';
 
-import vetOffice from '/public/assets/vet-office.jpeg';
-
 export default function Home() {
   return (
     <div>
@@ -22,7 +20,7 @@ export default function Home() {
             </div>
             <div className={styles.heroImage}>
               <div>
-                <Image alt="DAP De Beleyr office" src={vetOffice.src} quality={100} fill objectFit="cover" />
+                <Image alt="DAP De Beleyr office" src="/assets/vet-office.jpeg" quality={100} fill objectFit="cover" />
               </div>
             </div>
             <div className={styles.heroScroll}>
