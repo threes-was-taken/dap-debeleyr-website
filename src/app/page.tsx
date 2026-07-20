@@ -1,3 +1,4 @@
+import { AnnouncementPopup } from '@/components/announcement-popup/AnnouncementPopup';
 import { Card } from '@/components/card/Card';
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
@@ -7,6 +8,7 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <div>
+      <AnnouncementPopup />
       <Header />
       <div>
         <section className={styles.container}>
