@@ -2,40 +2,14 @@
 
 import { Dialog } from '@radix-ui/themes';
 import type { JSX } from 'react';
-import { useSyncExternalStore } from 'react';
+import { useState } from 'react';
 import styles from './AnnouncementPopup.module.css';
 
-// Bump this when the message changes so visitors who dismissed an older
-// announcement see the new one.
-const ANNOUNCEMENT_ID = 'placeholder-announcement-1';
-const STORAGE_KEY = 'dismissedAnnouncementId';
-const DISMISS_EVENT = 'announcement-dismissed';
-
-function subscribe(onStoreChange: () => void): () => void {
-  window.addEventListener(DISMISS_EVENT, onStoreChange);
-  return () => window.removeEventListener(DISMISS_EVENT, onStoreChange);
-}
-
-function isOpenSnapshot(): boolean {
-  return window.localStorage.getItem(STORAGE_KEY) !== ANNOUNCEMENT_ID;
-}
-
-function isOpenServerSnapshot(): boolean {
-  return false;
-}
-
-function dismiss(): void {
-  window.localStorage.setItem(STORAGE_KEY, ANNOUNCEMENT_ID);
-  window.dispatchEvent(new Event(DISMISS_EVENT));
-}
-
 export function AnnouncementPopup(): JSX.Element {
-  const open = useSyncExternalStore(subscribe, isOpenSnapshot, isOpenServerSnapshot);
+  const [open, setOpen] = useState(true);
 
   function handleOpenChange(isOpen: boolean): void {
-    if (!isOpen) {
-      dismiss();
-    }
+    setOpen(isOpen);
   }
 
   return (
